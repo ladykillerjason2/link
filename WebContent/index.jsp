@@ -15,6 +15,20 @@
 	int n=cal.get(Calendar.YEAR);
 	out.print(n);
 %> --%>
+<%
+	try{
+		String sql="select * from user";
+		Statement sta=DBUtil.getConnection().createStatement();
+		ResultSet rs=sta.executeQuery(sql);
+		rs.last();
+		out.print(rs.getString("name"));
+		out.print("<BR>");
+	}catch(Exception e){
+		e.printStackTrace();
+	}finally{
+		DBUtil.closeConnection();
+	}
+%>
 	<form action="login"  method="post">
 		<table>
 			<tr>

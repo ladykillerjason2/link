@@ -28,13 +28,17 @@
 				<td><input type="password" name="password2"></td>
 			</tr>
 			<tr>
-				<td><input type="radio"  name="sex">女</td>
-				<td><input type="radio"  name="sex" checked="true">男 </td>
+				<td><input type="radio"  name="sex"  value="女">女</td>
+				<td><input type="radio"  name="sex" value="男" checked="true">男 </td>
 			</tr>
 			
 			<tr>
 				<td>邮箱</td>
 				<td><input type="text" name="email" ></td>
+			</tr>
+			<tr>
+				<td>手机</td>
+				<td><input type="text" name="phone" ></td>
 			</tr>
 			<tr>
 				<td>job</td>
@@ -50,7 +54,7 @@
 					%>
 							<option value="<%=year%>"><%=year %></option>
 					<%
-							year++;
+							year--;
 						}
 					%>
 					</select>
