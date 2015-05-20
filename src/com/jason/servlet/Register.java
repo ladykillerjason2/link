@@ -99,9 +99,14 @@ public class Register extends HttpServlet {
 			RequestDispatcher dis=request.getRequestDispatcher("register.jsp");
 			dis.forward(request, response);
 		}else{
-			int idInt=Integer.parseInt(idStr);
-			idInt++;
-			idStr=String.valueOf(idInt);
+			if(idStr!=null&&!idStr.equals("")){
+				int idInt=Integer.parseInt(idStr);
+				idInt++;
+				idStr=String.valueOf(idInt);
+			}else{
+				idStr="10001";
+			}
+			
 			try {
 				PreparedStatement ps=DBUtil.getConnection().prepareStatement("insert into user values(?,?,?,?,?,?,?)");
 				ps.setString(1, idStr);
