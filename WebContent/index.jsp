@@ -30,6 +30,7 @@
 	}
 %>
 	<p>我是杨叶</p>
+	<p>我是杨森</p>
 	<form action="login"  method="post">
 		<table>
 			<tr>
