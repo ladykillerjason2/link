@@ -34,6 +34,7 @@
 	<p>git diff</p>
 	<p>用于客户端fetch</p>
 	<p>用于github for windows的fetch</p>
+	<p>看看gfw客户端的变化</p>
 	<form action="login"  method="post">
 		<table>
 			<tr>
