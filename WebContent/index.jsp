@@ -33,6 +33,7 @@
 	<p>我是杨森</p>
 	<p>git diff</p>
 	<p>用于客户端fetch</p>
+	<p>用于github for windows的fetch</p>
 	<form action="login"  method="post">
 		<table>
 			<tr>
