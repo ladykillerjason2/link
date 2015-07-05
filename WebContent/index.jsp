@@ -31,6 +31,7 @@
 %>
 	<p>我是杨叶</p>
 	<p>我是杨森</p>
+	<p>git diff</p>
 	<form action="login"  method="post">
 		<table>
 			<tr>
